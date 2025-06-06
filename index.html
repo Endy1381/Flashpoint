@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlashPoint - Home</title>
+  <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0e7ff 0%, #f0f9ff 100%);
+    }
+    /* Background image blurred */
+    .background-img {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: blur(4px) ;
+    }
+    .nav-link {
+      color: white;
+    }
+    .nav-link:hover {
+      color: rgb(122, 122, 122);
+    }
+    .navbar-toggler {
+      background-color: rgb(53, 255, 245);
+      color: white;
+    }
+    .nav {
+      background-color: white;
+      color: black;
+      margin-top: 3%;
+      padding: 1%;
+    }
+
+    .header {
+      color: black;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      margin-top: 2%;
+    }
+    /* Hero splash */
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    }
+   
+    /* Custom button style */
+    .btn-teal {
+      background-color: rgb(53, 255, 245);
+      color: #fff;
+      border-radius: 0.25rem;
+      transition: background-color 0.3s ease;
+    }
+    .card {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+    }
+    .btn-teal:hover {
+      background-color: #7ac0bc;
+      color: #fff !important;
+    }
+    .About-section {
+      color: white;
+    }
+    /* Section headings */
+    .section-heading {
+      color: rgb(49, 255, 245);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    /* Card overrides */
+    .card-custom {
+      border: none;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    .card-custom .card-body {
+      padding: 1.5rem;
+    }
+
+    /* About / How sections background */
+    .section-bg {
+      background-color: rgba(255, 255, 255, 0.04);
+      border-radius: 0.5rem;
+      padding: 2rem 1.5rem;
+    }
+    #contact {
+      color: white;
+    }
+
+    /* Footer spacing */
+    footer {
+      margin-top: 4rem;
+      padding: 2rem 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <img
+    src="assets/pexels-ron-lach-10643471.jpg"
+    alt="Background"
+    class="background-img"
+  >
+
+  <!-- Navbar -->
+  <header class="header">
+    <nav class=" nav navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand" href="#">FlashPoint</a>
+      <!-- Purpose of responsive navbar -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how-it-works">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="main.html"
+              class="btn btn-teal text-white nav-link px-3 ms-lg-3"
+            >
+              Launch App
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero text-center container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="display-1 fw-bold">FlashPoint Quiz</h1>
+        <p class="lead mb-4">Engaging, interactive, and fun quizzes for everyone!</p>
+        <a href="#how-it-works" class="btn btn-teal btn-lg">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5 About-section">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="section-heading">About Us</h2>
+        <p>
+          FlashPoint is designed to bring fun and interactive learning to groups. Our
+          platform makes it easy to create custom quizzes and challenge your friends or
+          team members, fostering a dynamic and engaging environment.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="about-image rounded section-bg"
+          style="background-image: url('flash.jpg'); background-size: cover; min-height: 250px; background-position: center;"
+        ></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="container py-5">
+    <h2 class="section-heading text-center">How It Works</h2>
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="card card-custom h-100">
+          <div class="card-body text-center">
+            <h3 class="h5 mb-3">1. Setup Players</h3>
+            <p>Enter names for up to six players to kick off your quiz session.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-custom h-100">
+          <div class="card-body text-center">
+            <h3 class="h5 mb-3">2. Create Questions</h3>
+            <p>Each player takes a turn creating five questions for their peers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-custom h-100">
+          <div class="card-body text-center">
+            <h3 class="h5 mb-3">3. Quiz Time!</h3>
+            <p>Answer questions in a fast-paced, timed environment and score points.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why It Works Section -->
+  <section id="why-it-works" class="container py-5">
+    <h2 class="section-heading text-center">Why FlashPoint?</h2>
+    <div class="row gy-4 justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-custom h-100">
+          <div class="card-body text-center">
+            <h3 class="h5 mb-3">Engaging</h3>
+            <p>Our dynamic format keeps everyone on their toes and actively participating.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-custom h-100">
+          <div class="card-body text-center">
+            <h3 class="h5 mb-3">Customizable</h3>
+            <p>Tailor questions to your group's interests for maximum fun.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-custom h-100">
+          <div class="card-body text-center">
+            <h3 class="h5 mb-3">Competitive</h3>
+            <p>Track scores and see who comes out on top with our leaderboard.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container py-5 text-center">
+    <h2 class="section-heading">Contact Us</h2>
+    <div class="row justify-content-center mt-4">
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="assets/email.svg" alt="Email Icon" class="me-3" style="width: 40px;">
+          <p class="mb-0">contact@flashpointquiz.com</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="assets/whatsapp.svg" alt="Phone Icon" class="me-3" style="width: 40px;">
+          <p class="mb-0">+1 (555) 123-4567</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p class="small mb-0">© 2025 FlashPoint Quiz</p>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
